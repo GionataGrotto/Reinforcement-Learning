@@ -5,7 +5,6 @@
 #include <random>
 #include <algorithm>
 #include <math.h>
-#include <float.h>
 
 #define MAX_CARS 20
 #define MAX_MOVE_OF_CARS 5
