@@ -110,7 +110,8 @@ int main() {
     std::vector<std::vector<double>> policy(MAX_CARS+1, std::vector<double>(MAX_CARS+1,0));
 
     // possible actions
-    std::vector<int> actions = {-5,-4,-3,-2,-1,0,1,2,3,4,5};
+    std::vector<int> actions(2*MAX_MOVE_OF_CARS + 1);
+    std::iota(actions.begin(), actions.end(), -MAX_MOVE_OF_CARS);
 
     int policy_iterations = 1;
     
